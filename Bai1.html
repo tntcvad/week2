@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function thongbao() {
+            alert("hello");
+            let a = prompt("nhap vao so a");
+            let b = prompt("nhap vao so b");
+            c = parseInt(a) + parseInt(b);/* ham parseInt phan tich 1 chuoi va tra ve
+                                            gia tri nguyen neu co the khong thi tra ve gia tri NaN*/
+            document.write("tong hai so la :"+c);
+        }
+        function tong() {
+            let txt1 = document.getElementById("txt1").value;
+            let txt2 = document.getElementById("txt2").value;
+            let c = parseInt(txt1) + parseInt(txt2);
+
+            document.getElementById("result").value = c;
+
+        }
+
+    </script>
+</head>
+<body>
+    <a href="#" onclick="thongbao()">al</a>
+    <input type="text" id = "txt1">
+    <input type = "text" id = "txt2">
+    <button type="button" onclick="tong()">(+)</button>
+    <input type="text" id = "result">
+
+
+</body>
+</html>
