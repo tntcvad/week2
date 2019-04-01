@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Mode Javascript</title>
     <script type="text/javascript">
         function thongbao() {
             alert("hello");
@@ -20,8 +20,19 @@
             document.getElementById("result").value = c;
 
         }
+        function khaibaobien() {
+            var mynumber    = 5;
+            var mystring    = "hello";
+            var myBoolean   = true;
+            var myObject    = {};
+            var myArray     = [];
+            var myUndefine  = undefine;
+            var myNull      = null;
+
+        }
 
     </script>
+    <script src = Bai1.js></script>
 </head>
 <body>
     <a href="#" onclick="thongbao()">al</a>
@@ -29,7 +40,55 @@
     <input type = "text" id = "txt2">
     <button type="button" onclick="tong()">(+)</button>
     <input type="text" id = "result">
+<script type="text/javascript">
+    function tong() {
+        let txt1 = document.getElementById("txt1").value;
+        let txt2 = document.getElementById("txt2").value;
+        let c = parseInt(txt1) + parseInt(txt2);
 
+        document.getElementById("result").value = c;
+</script>
+    <p id="demo1"></p>
 
+    <script>
+      var d = new Date();
+      document.getElementById("demo1").innerHTML = d.getUTCDay();
+    </script>
+    <h1>xac định ngày trong tuần </h1>
+
+    <button onclick="myFunction()">Run</button>
+
+    <a id="demo"></a>
+
+    <script>
+      var date = new Date();//lấy giá trị ngày giờ tháng phút gi
+      document.getElementById("demo").innerHTML = date;
+      function myFunction() {
+        var day = date.getDay();
+        var dayweek = '';
+        if (day == 0) {
+          dayweek = 'Chủ nhật';
+        }
+        if (day == 1) {
+          dayweek = 'Thứ 2';
+        }
+        if (day == 2) {
+          dayweek = 'Thứ 3';
+        }
+        if (day == 3) {
+          dayweek = 'Thứ 4';
+        }
+        if (day == 4) {
+          dayweek = 'Thứ 5';
+        }
+        if (day == 5) {
+          dayweek = 'Thứ 6';
+        }
+        if (day == 6) {
+          dayweek = 'Thứ 7';
+        }
+        document.getElementById("demo").innerHTML = dayweek;
+      }
+    </script>
 </body>
 </html>
