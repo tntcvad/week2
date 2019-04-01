@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function yearNhuan() {
+          let year = parseInt(prompt("enter a year"));
+          if(year % 4== 0) {
+
+            if (year % 100 == 0) {
+              if (year % 400 == 0) {            // năm chia hết cho 400 là năm nhuận//
+                alert(year + "is a leap year");
+              }
+              else {                            //không chia hết 400 mà chia hết 100
+                alert(year + "not is a leap year");
+              }
+            }
+            else                                //không  chia hết cho 100 mà  hết cho 4
+            {
+              alert(year + "is a leap year")
+            };
+          }
+
+          else {                                   // k chia hết cho 4
+            alert(year + "is not a lear year");
+          }
+        }
+    </script>
+    
+</head>
+<body>
+<button type="button" onclick="yearNhuan()">kiểm tra năm nhuận</button>
+</body>
+</html>
