@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+        function mon_mon() {
+          let mon_a = parseInt(document.getElementById("txt1").value);
+            let day_mon ="";
+
+          switch (mon_a) {
+            case 2:{
+             day_mon= "28 hoac 29 ngay";
+              break
+            }
+            case 4:
+            case 6:
+            case 9:
+            case 11:{
+              day_mon = "thang co 30 ngay";
+              break;
+            }
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            {
+              day_mon= "thang co 31 ngay";
+              break;
+
+              }
+
+            default: {
+             day_mon = "nhap lai"
+              break;
+            }
+          }
+    document.getElementById("result").innerText= day_mon;
+        }
+    </script>
+</head>
+<body>
+<input type ="text1"id = "txt1">
+<button type="button" onclick="mon_mon()">tinh so ngay trong thang</button>
+<a  id = "result"> text</a>
+</body>
+</html>
