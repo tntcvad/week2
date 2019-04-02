@@ -42,15 +42,16 @@
         }
         function theweigh() {
           let weigh = parseInt(document.getElementById("txt2").value);
+          let hight = parseInt(document.getElementById("txt3").value);
           let kq = "";
-          if(weigh<18)
+          if((weigh /hight)<18)
             kq = "underweigh";
 
             else if (weigh < 25)
               kq = "Normal";
                 else if (weigh < 30)
                  kq = "overweigh";
-                 else
+                else
                   kq = "obese"
           document.getElementById("result2").innerText = kq;
 
@@ -65,8 +66,11 @@
     <a  id = "result"> text</a>
     <br>
 
-    <input type ="text2"id = "txt2">
-    <button type="button" onclick="theweigh()">Tinh chi so can nang co the</button>
+    can nang:
+    <input type ="text2"id = "txt2" value="">
+    Chieucao:
+    <input type="text2" id = "txt3" value="">
+    <button type="button" onclick="theweigh()">TinhToan:</button>
     <a  id = "result2"> text</a>
 </body>
 </html>
