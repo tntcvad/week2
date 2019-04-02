@@ -11,13 +11,23 @@ function TínhTongDayso() {
   // tính tổng của tất các các số từ 1---100
   // nghĩa là 1+2+3+ ..100=
 
-  let i;
+  let i = prompt("nhap vao so ban dau");
+  let j = prompt("nhap vao so cuoi");
   let tong =0;
-  for( i=1;i<=100;i++){
+  for( i=i;i<=j;i++){
     tong +=i;
   }
   alert(tong);
-
+/* vi du tinh tong tu to den from
+      function sum_to_from(){
+           let i =parseInt(document.getElementById("txt1").value);lay gia tri text trong html
+           let j = parseInt(document.getElementById("txt2").value);
+           let x = 0
+           for(i=i;i<=j;i++){
+             x+=i;
+           }
+           document.getElementById("result").value = x;
+ */
 
 
 }
