@@ -45,12 +45,13 @@
           let kq = "";
           if(weigh<18)
             kq = "underweigh";
-          else if(weigh<25)
-            kq = "Normal";
-          else if(weigh<30)
-            kq = "overweigh";
-          else
-            kq = "obese"
+
+            else if (weigh < 25)
+              kq = "Normal";
+                else if (weigh < 30)
+                 kq = "overweigh";
+                 else
+                  kq = "obese"
           document.getElementById("result2").innerText = kq;
 
         }
