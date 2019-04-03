@@ -17,6 +17,7 @@
         let txt1 = document.getElementById("txt1").value;
         let txt2 = document.getElementById("txt2").value;
         let c = parseInt(txt1) + parseInt(txt2);
+
         document.getElementById("result").value = c;
       }
          function sum_to_from(){
@@ -27,7 +28,6 @@
              x+=i;
            }
            document.getElementById("result1").value = x;
-
          }
       function khaibaobien() {
         var mynumber    = 5;
@@ -37,6 +37,9 @@
         var myArray     = [];
         var myUndefine  = undefine;
         var myNull      = null;
+        document.write(mynumber + ":" + typeof mynumber + "<br>");// ham typeof xet xem
+        document.write(mystring + ":" + typeof mystring + "<br>");
+        document.write(myBoolean + ":" + typeof myBoolean + "<br>");
       }
     </script>
     <script src = Bai1.js></script>
@@ -53,6 +56,9 @@
     <input type = "text4" id = "txt4">
     <button type ="button" onclick="sum_to_from()">Sum_to_from</button>
     <input type="text" id = "result1">
+    <br>
+    <button type="button" onclick="khaibaobien()">test các kieu bien</button>
+    <a href="" id = "testkieudulieu"></a>
 <script type="text/javascript">
 </script>
 <p id="demo1"></p>
@@ -93,6 +99,18 @@
             }
             document.getElementById("demo").innerHTML = dayweek;
           }
+</script>
+<script type ="text/javascript">
+  var mynumber    = 5;
+  var mystring    = "hello";
+  var myBoolean   = true;
+  var myObject    = {};
+  var myArray     = [];
+  var myUndefine  = undefine;
+  var myNull      = null;
+  document.write(mynumber + ":" + typeof mynumber + "<br>");// ham typeof xet  xem kieu du lieu
+  document.write(mystring + ":" + typeof mystring + "<br>");
+  document.write(myBoolean + ":" + typeof myBoolean + "<br>");
 </script>
 </body>
 </html>

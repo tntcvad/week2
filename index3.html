@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>You must love me</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script language="javascript">
+      let sout, i, j;
+      sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+      i = j = 1;
+      while (i <= 10) {
+        sout = sout + "<tr>";
+        while (j <= 10) {
+          sout = sout + "<td>" + i * j + "</td>";
+          j++;
+        }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+      }
+      sout = sout + "</table>";
+      document.write(sout);
+    </script>
+</head>
+<body>
+<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+<input type="button" value=" YES " onclick="yesClick()" style="position:absolute; left:285px; top:235px;"/>
+<input type="button" id="btnme" value="  me  " onmouseover="noHover()" style="position:absolute; left:360px; top:235px;"/>
+</body>
+</html>
