@@ -11,15 +11,18 @@
         let n2= 1;
         let cout =0;
         let dayfibonaci = "";
+        let a=0;
         for( i=1;i<=socanin;i++){
           n3= n1+n2;
           n1=n2;
           n2=n3;
+          a+=n3;
           dayfibonaci = dayfibonaci  + "  " + n3;
           cout++;
         }
-
         document.write(dayfibonaci);
+        document.write(" tong cua day ="+a);
+
 
 
     </script>
