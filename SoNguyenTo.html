@@ -15,7 +15,7 @@
         }
         else{
           // lặp từ 2 tới n-1
-          for (var i = 2; i < n-1; i++)
+          for (var i = 2; i < Math.sqrt(n); i++)
           {
             if (n % i == 0){
               flag = false;
@@ -39,6 +39,7 @@
 <body>
   <input type="text" id = "snt">
   <button type = "button" onclick="kiem_tra_snt(snt.value)">ketqua</button>
+  
 
   <p href="" id = "so"></p>
 </body>
