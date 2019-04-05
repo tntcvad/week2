@@ -17,3 +17,18 @@ function dislay_array() {
   document.getElementById("result").innerHTML = e;
 
 }
+
+function daoMang() {
+
+  let fist = 0;
+  let last = array.length -1;
+  while (fist<last){
+    let a_a = array[fist];
+    array[fist]= array[last]
+    array[last] = a_a;
+    fist++;
+    last--;
+  }
+document.getElementById("resultdaomang").innerText = array;
+
+}
